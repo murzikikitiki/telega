@@ -1,0 +1,16 @@
+<?php
+
+$token = '252318270:AAGpK5HgrKGHCLmWzvSGRW4hxNH8ZFw5pKc';
+
+$chatId = 157644549;
+$text = 'murrrr...';
+
+$parametrs = [
+     'chat_id' => $chatId,
+     'text' = > $text,
+];
+
+$url = 'https://api.telegram.org/bot' . $token . '/sendMessage?'
+    . http_build_query($parameters);
+
+file_get_contents($url;)
